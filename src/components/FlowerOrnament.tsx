@@ -16,8 +16,8 @@ const FlowerOrnament: React.FC<FlowerOrnamentProps> = ({ className }) => {
       className={className}
     >
       <Heart 
-        className="w-full h-full text-primary/30" 
-        strokeWidth={1}
+        className="w-full h-full text-primary/10" 
+        strokeWidth={0.8}
       />
     </motion.div>
   );
