@@ -14,23 +14,46 @@ const FlowerOrnament: React.FC<FlowerOrnamentProps> = ({ className }) => {
       transition={{ duration: 1.5 }}
       className={className}
     >
-      {/* Custom hand-drawn heart SVG */}
+      {/* Custom hand-drawn sketchy heart SVG */}
       <svg 
         viewBox="0 0 24 24" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg" 
         className="w-full h-full text-primary/10"
       >
+        {/* Multiple irregular paths to create a sketchy, hand-drawn effect */}
         <path 
-          d="M12 21.35c-0.45 0-0.9-0.15-1.28-0.47-1.7-1.42-6.05-5.15-7.05-6.2-1.77-1.82-2.67-4.2-2.67-6.68 0-5 3.95-9 8.5-9 2.35 0 4.58 1 6.13 2.82 1.55-1.82 3.78-2.82 6.13-2.82 4.55 0 8.5 4 8.5 9 0 2.48-0.9 4.86-2.67 6.68-1 1.05-5.35 4.78-7.05 6.2-0.38 0.32-0.83 0.47-1.28 0.47z" 
+          d="M11.8 20.8c-0.3-0.2-0.7-0.5-1.2-0.9-1.7-1.4-5.8-4.9-6.8-6-1.7-1.8-2.5-4-2.6-6.4 0.1-4.8 3.8-8.6 8.2-8.7 2.3 0.1 4.4 1 5.9 2.7 1.5-1.7 3.6-2.6 5.9-2.7 4.4 0.1 8.1 3.9 8.2 8.7-0.1 2.4-0.9 4.6-2.6 6.4-1 1.1-5.1 4.6-6.8 6-0.5 0.4-0.9 0.7-1.2 0.9" 
           stroke="currentColor" 
-          strokeWidth="0.7"
+          strokeWidth="0.4"
           strokeLinecap="round" 
           strokeLinejoin="round"
-          style={{
-            strokeDasharray: "0.5, 0.8",
-            strokeDashoffset: "0.2"
-          }}
+          style={{ strokeDasharray: "1, 0.8" }}
+        />
+        <path 
+          d="M12.2 21.1c-0.4-0.3-0.9-0.6-1.3-1-1.8-1.5-5.6-5-6.5-5.9-1.8-1.9-2.7-4.4-2.8-6.7 0-5.2 4-9.3 8.6-9.3 2.2 0 4.3 0.9 5.9 2.6 1.6-1.7 3.7-2.6 5.9-2.6 4.6 0 8.6 4.1 8.6 9.3-0.1 2.3-1 4.8-2.8 6.7-0.9 0.9-4.7 4.4-6.5 5.9-0.4 0.4-0.9 0.7-1.3 1" 
+          stroke="currentColor" 
+          strokeWidth="0.3"
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+          style={{ strokeDasharray: "0.8, 1.2" }}
+        />
+        <path 
+          d="M12 21.6c-0.5-0.3-1-0.7-1.5-1.1-1.5-1.3-5.5-4.8-6.8-6.1-1.9-2-2.9-4.5-2.9-7 0-5.3 4.1-9.6 8.9-9.6 2.1 0 4.3 0.9 5.9 2.7 1.6-1.8 3.8-2.7 5.9-2.7 4.8 0 8.9 4.3 8.9 9.6 0 2.5-1 5-2.9 7-1.3 1.3-5.3 4.8-6.8 6.1-0.5 0.4-1 0.8-1.5 1.1" 
+          stroke="currentColor" 
+          strokeWidth="0.2"
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+          style={{ strokeDasharray: "1.5, 0.5" }}
+        />
+        {/* Add some internal sketch lines for texture */}
+        <path 
+          d="M8 9.5c0.5 1 1.5 1.7 2.5 2.2 M16 9.5c-0.5 1-1.5 1.7-2.5 2.2"
+          stroke="currentColor" 
+          strokeWidth="0.2"
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+          style={{ strokeDasharray: "0.3, 0.6" }}
         />
       </svg>
     </motion.div>
