@@ -54,6 +54,22 @@ const SaveTheDate: React.FC = () => {
       }} className="divider-ornament py-4">
           <div className="relative h-0.5 w-16 bg-muted-foreground/30"></div>
         </motion.div>
+        
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, delay: 1.3 }}
+          className="w-full max-w-md mx-auto"
+        >
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="/lovable-uploads/ea9e63b3-1152-475e-ae18-f2dc0946dc20.png" 
+              alt="Couple" 
+              className="w-full h-auto rounded-lg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+        </motion.div>
 
         <motion.div initial={{
         opacity: 0,
