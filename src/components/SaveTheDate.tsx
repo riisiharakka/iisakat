@@ -25,7 +25,7 @@ const SaveTheDate: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-3xl mx-auto text-center space-y-8 md:space-y-12">
+      <div className="w-full max-w-3xl mx-auto text-center space-y-6 md:space-y-10">
         <motion.div initial={{
         opacity: 0
       }} animate={{
@@ -42,7 +42,7 @@ const SaveTheDate: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Date section - moved above the divider */}
+        {/* Date section - with reduced spacing */}
         <motion.div initial={{
         opacity: 0,
         y: 30
@@ -52,12 +52,22 @@ const SaveTheDate: React.FC = () => {
       }} transition={{
         duration: 1,
         delay: 1.5
-      }} className="space-y-4">
-          <div className="inline-block border border-border/50 p-6 md:p-8 rounded-md backdrop-blur-sm bg-background/70">
+      }} className="space-y-2">
+          <div className="inline-block border border-border/50 p-4 md:p-6 rounded-md backdrop-blur-sm bg-background/70">
             <p className="text-xl md:text-2xl font-serif">
               14.2.2026
             </p>
           </div>
+          <motion.p initial={{
+            opacity: 0
+          }} animate={{
+            opacity: 1
+          }} transition={{
+            duration: 1,
+            delay: 2.2
+          }} className="text-sm font-serif text-muted-foreground md:text-base">
+            Formal invitation to follow
+          </motion.p>
         </motion.div>
 
         <motion.div initial={{
@@ -88,17 +98,6 @@ const SaveTheDate: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
         </motion.div>
-
-        <motion.p initial={{
-        opacity: 0
-      }} animate={{
-        opacity: 1
-      }} transition={{
-        duration: 1,
-        delay: 2.2
-      }} className="text-sm font-serif text-muted-foreground md:text-base">
-          Formal invitation to follow
-        </motion.p>
       </div>
     </div>;
 };
