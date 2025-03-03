@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -53,7 +52,7 @@ const SaveTheDate: React.FC = () => {
         duration: 1,
         delay: 1.5
       }} className="space-y-2">
-          <div className="inline-block border border-border/50 p-4 md:p-6 rounded-md backdrop-blur-sm bg-background/70">
+          <div className="inline-block p-4 md:p-6 rounded-md backdrop-blur-sm bg-background/70">
             <p className="text-xl md:text-2xl font-serif">
               14.2.2026
             </p>
