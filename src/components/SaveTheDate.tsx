@@ -42,6 +42,24 @@ const SaveTheDate: React.FC = () => {
           </p>
         </motion.div>
 
+        {/* Date section - moved above the divider */}
+        <motion.div initial={{
+        opacity: 0,
+        y: 30
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 1,
+        delay: 1.5
+      }} className="space-y-4">
+          <div className="inline-block border border-border/50 p-6 md:p-8 rounded-md backdrop-blur-sm bg-background/70">
+            <p className="text-xl md:text-2xl font-serif">
+              14.2.2026
+            </p>
+          </div>
+        </motion.div>
+
         <motion.div initial={{
         opacity: 0,
         y: 20
@@ -68,23 +86,6 @@ const SaveTheDate: React.FC = () => {
               className="w-full h-auto rounded-lg"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-          </div>
-        </motion.div>
-
-        <motion.div initial={{
-        opacity: 0,
-        y: 30
-      }} animate={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 1,
-        delay: 1.5
-      }} className="space-y-4">
-          <div className="inline-block border border-border/50 p-6 md:p-8 rounded-md backdrop-blur-sm bg-background/70">
-            <p className="text-xl md:text-2xl font-serif">
-              14.2.2026
-            </p>
           </div>
         </motion.div>
 
