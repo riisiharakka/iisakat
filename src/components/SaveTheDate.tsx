@@ -1,9 +1,12 @@
+
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import FlowerOrnament from './FlowerOrnament';
+
 const SaveTheDate: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     // Disable page scrolling on mobile
     document.body.style.overflow = 'hidden';
@@ -11,6 +14,7 @@ const SaveTheDate: React.FC = () => {
       document.body.style.overflow = 'auto';
     };
   }, []);
+  
   return <div ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-32 h-32 md:w-48 md:h-48 opacity-30">
@@ -30,12 +34,12 @@ const SaveTheDate: React.FC = () => {
         duration: 1.2,
         delay: 0.2
       }} className="space-y-2">
-          <p className="text-sm md:text-base uppercase tracking-widest text-muted-foreground">
-            Save the Date
-          </p>
           <h1 className={cn("text-5xl md:text-7xl font-cursive", "tracking-wide text-primary")}>
             Iisakat
           </h1>
+          <p className="text-sm md:text-base uppercase tracking-widest text-muted-foreground">
+            Save the Date
+          </p>
         </motion.div>
 
         <motion.div initial={{
