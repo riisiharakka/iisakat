@@ -6,57 +6,50 @@ interface FlowerOrnamentProps {
   className?: string;
 }
 
+const draw = {
+  hidden: { pathLength: 0, opacity: 0 },
+  visible: {
+    pathLength: 1,
+    opacity: 1,
+    transition: {
+      pathLength: { type: "spring", duration: 2.5, bounce: 0 },
+      opacity: { duration: 0.3 }
+    }
+  }
+};
+
 const FlowerOrnament: React.FC<FlowerOrnamentProps> = ({ className }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1.5 }}
+    <motion.svg
+      initial="hidden"
+      animate="visible"
+      viewBox="0 0 200 200"
       className={className}
+      xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Custom hand-drawn sketchy heart SVG */}
-      <svg 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg" 
-        className="w-full h-full text-primary/10"
-      >
-        {/* Multiple irregular paths to create a sketchy, hand-drawn effect */}
-        <path 
-          d="M11.8 20.8c-0.3-0.2-0.7-0.5-1.2-0.9-1.7-1.4-5.8-4.9-6.8-6-1.7-1.8-2.5-4-2.6-6.4 0.1-4.8 3.8-8.6 8.2-8.7 2.3 0.1 4.4 1 5.9 2.7 1.5-1.7 3.6-2.6 5.9-2.7 4.4 0.1 8.1 3.9 8.2 8.7-0.1 2.4-0.9 4.6-2.6 6.4-1 1.1-5.1 4.6-6.8 6-0.5 0.4-0.9 0.7-1.2 0.9" 
-          stroke="currentColor" 
-          strokeWidth="0.4"
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-          style={{ strokeDasharray: "1, 0.8" }}
+      <g fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round">
+        <motion.path
+          d="M100,20 C120,40 140,40 160,20 C140,50 140,70 160,100 C140,80 120,80 100,100 C80,80 60,80 40,100 C60,70 60,50 40,20 C60,40 80,40 100,20 Z"
+          variants={draw}
+          custom={1}
+          className="text-primary/30"
         />
-        <path 
-          d="M12.2 21.1c-0.4-0.3-0.9-0.6-1.3-1-1.8-1.5-5.6-5-6.5-5.9-1.8-1.9-2.7-4.4-2.8-6.7 0-5.2 4-9.3 8.6-9.3 2.2 0 4.3 0.9 5.9 2.6 1.6-1.7 3.7-2.6 5.9-2.6 4.6 0 8.6 4.1 8.6 9.3-0.1 2.3-1 4.8-2.8 6.7-0.9 0.9-4.7 4.4-6.5 5.9-0.4 0.4-0.9 0.7-1.3 1" 
-          stroke="currentColor" 
-          strokeWidth="0.3"
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-          style={{ strokeDasharray: "0.8, 1.2" }}
+        <motion.path
+          d="M100,40 C110,50 120,50 130,40 C120,55 120,65 130,80 C120,70 110,70 100,80 C90,70 80,70 70,80 C80,65 80,55 70,40 C80,50 90,50 100,40 Z"
+          variants={draw}
+          custom={2}
+          className="text-primary/40"
         />
-        <path 
-          d="M12 21.6c-0.5-0.3-1-0.7-1.5-1.1-1.5-1.3-5.5-4.8-6.8-6.1-1.9-2-2.9-4.5-2.9-7 0-5.3 4.1-9.6 8.9-9.6 2.1 0 4.3 0.9 5.9 2.7 1.6-1.8 3.8-2.7 5.9-2.7 4.8 0 8.9 4.3 8.9 9.6 0 2.5-1 5-2.9 7-1.3 1.3-5.3 4.8-6.8 6.1-0.5 0.4-1 0.8-1.5 1.1" 
-          stroke="currentColor" 
-          strokeWidth="0.2"
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-          style={{ strokeDasharray: "1.5, 0.5" }}
+        <motion.circle
+          cx="100"
+          cy="60"
+          r="5"
+          variants={draw}
+          custom={3}
+          className="text-primary/70"
         />
-        {/* Add some internal sketch lines for texture */}
-        <path 
-          d="M8 9.5c0.5 1 1.5 1.7 2.5 2.2 M16 9.5c-0.5 1-1.5 1.7-2.5 2.2"
-          stroke="currentColor" 
-          strokeWidth="0.2"
-          strokeLinecap="round" 
-          strokeLinejoin="round"
-          style={{ strokeDasharray: "0.3, 0.6" }}
-        />
-      </svg>
-    </motion.div>
+      </g>
+    </motion.svg>
   );
 };
 
