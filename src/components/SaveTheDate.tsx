@@ -59,7 +59,7 @@ const SaveTheDate: React.FC = () => {
         }} transition={{
           duration: 1,
           delay: 2.2
-        }} className="text-sm font-serif text-muted-foreground md:text-base">
+        }} className="text-sm font-cursive text-muted-foreground md:text-base">
             Formal invitation to follow
           </motion.p>
         </motion.div>
