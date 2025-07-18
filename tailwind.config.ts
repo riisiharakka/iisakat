@@ -22,7 +22,7 @@ export default {
 			fontFamily: {
 				serif: ['Cormorant Garamond', 'serif'],
 				sans: ['Inter', 'sans-serif'],
-				cursive: ['Parisienne', 'cursive'],
+				cursive: ['Dancing Script', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
