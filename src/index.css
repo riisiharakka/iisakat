@@ -61,8 +61,8 @@
     overflow-x: hidden;
     background-image:
       radial-gradient(120% 100% at 50% 40%, hsl(var(--background)) 55%, hsl(var(--foreground) / 0.06) 100%),
-      url('/images/paper-texture-1024.png');
-    background-size: 100% 100%, 1024px 1024px;
+      url('/lovable-uploads/73ea720a-18dc-416b-9eb6-768925f03287.png');
+    background-size: 100% 100%, 768px 768px;
     background-repeat: no-repeat, repeat;
     background-blend-mode: multiply, normal;
   }
