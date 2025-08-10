@@ -40,7 +40,7 @@ const SaveTheDate: React.FC = () => {
         delay: 0.2
       }} className="space-y-2">
           <h1 className={cn("text-5xl md:text-7xl font-september", "tracking-wide text-primary")}>Silja ja Harri</h1>
-          <p className="text-sm md:text-base uppercase tracking-widest text-muted-foreground">
+          <p className="font-serif text-sm md:text-base uppercase tracking-widest text-muted-foreground">
             Save the Date
           </p>
         </motion.div>
