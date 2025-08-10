@@ -1,15 +1,24 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { differenceInCalendarDays, startOfDay } from 'date-fns';
 import { cn } from '@/lib/utils';
 import FlowerOrnament from './FlowerOrnament';
 const SaveTheDate: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [daysLeft, setDaysLeft] = useState<number | null>(null);
   useEffect(() => {
     // Disable page scrolling on mobile
     document.body.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = 'auto';
     };
+  }, []);
+
+  useEffect(() => {
+    const now = new Date();
+    const target = new Date(2026, 1, 14);
+    const days = differenceInCalendarDays(startOfDay(target), startOfDay(now));
+    setDaysLeft(days);
   }, []);
   return <div ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
@@ -52,6 +61,16 @@ const SaveTheDate: React.FC = () => {
               14.2.2026
             </p>
           </div>
+          {daysLeft !== null && (
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.9 }}
+              className="text-lg md:text-xl text-muted-foreground"
+            >
+              {daysLeft} päivää jäljellä
+            </motion.p>
+          )}
           <motion.p initial={{
           opacity: 0
         }} animate={{
