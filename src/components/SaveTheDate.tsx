@@ -22,7 +22,7 @@ const SaveTheDate: React.FC = () => {
         duration: 1.2,
         delay: 0.2
       }} className="space-y-2">
-          <h1 className={cn("text-5xl md:text-7xl font-september", "tracking-wide text-primary")}>Silja ja Harri</h1>
+          <h1 className={cn("text-5xl md:text-7xl font-september", "tracking-wide text-primary")}>Silja & Harri</h1>
           <p className="font-serif text-sm md:text-base uppercase tracking-widest text-muted-foreground">
             Save the Date
           </p>
