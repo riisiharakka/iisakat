@@ -13,7 +13,6 @@ const SaveTheDate: React.FC = () => {
       document.body.style.overflow = 'auto';
     };
   }, []);
-
   useEffect(() => {
     const now = new Date();
     const target = new Date(2026, 1, 14);
@@ -57,20 +56,20 @@ const SaveTheDate: React.FC = () => {
         delay: 1.5
       }} className="space-y-2">
           <div className="inline-block p-4 md:p-6 rounded-md backdrop-blur-sm bg-background/70">
-            <p className="font-september text-muted-foreground text-xl md:text-xl">
+            <p className="font-september text-muted-foreground text-xl md:text-5xl">
               14.2.2026
             </p>
           </div>
-          {daysLeft !== null && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1.9 }}
-              className="font-september text-2xl text-zinc-600 md:text-2xl"
-            >
+          {daysLeft !== null && <motion.p initial={{
+          opacity: 0
+        }} animate={{
+          opacity: 1
+        }} transition={{
+          duration: 1,
+          delay: 1.9
+        }} className="font-september text-2xl text-zinc-600 md:text-4xl">
               {daysLeft} päivää jäljellä
-            </motion.p>
-          )}
+            </motion.p>}
           <motion.p initial={{
           opacity: 0
         }} animate={{
@@ -78,7 +77,7 @@ const SaveTheDate: React.FC = () => {
         }} transition={{
           duration: 1,
           delay: 2.2
-        }} className="font-september text-2xl text-zinc-600 md:text-2xl">Virallinen kutsu saapuu myöhemmin</motion.p>
+        }} className="font-september text-2xl text-zinc-600 md:text-4xl">Virallinen kutsu saapuu myöhemmin</motion.p>
         </motion.div>
 
         <motion.div initial={{
