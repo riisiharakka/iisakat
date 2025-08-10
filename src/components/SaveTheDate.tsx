@@ -46,7 +46,7 @@ const SaveTheDate: React.FC = () => {
         duration: 1,
         delay: 1.5
       }} className="space-y-2">
-          <p className="font-september text-muted-foreground text-xl md:text-7xl">
+          <p className="font-september text-muted-foreground md:text-7xl text-4xl">
             14.2.2026
           </p>
           {daysLeft !== null && <motion.p initial={{
