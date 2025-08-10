@@ -93,7 +93,7 @@ const SaveTheDate: React.FC = () => {
         delay: 1.3
       }} className="w-full max-w-md mx-auto">
           <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img src="/lovable-uploads/ea9e63b3-1152-475e-ae18-f2dc0946dc20.png" alt="Couple" className="w-full h-auto rounded-lg" />
+            <img src="/lovable-uploads/def916bb-9748-4bb6-bbf7-62148c0a4852.png" alt="Wedding invitation photo of a couple at sunset on a rooftop" className="w-full h-auto rounded-lg" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
         </motion.div>
