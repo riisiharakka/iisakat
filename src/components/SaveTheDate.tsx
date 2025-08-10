@@ -91,6 +91,9 @@ const SaveTheDate: React.FC = () => {
           </div>
         </motion.div>
       </div>
+      <footer className="absolute inset-x-0 bottom-6 text-center">
+        <p className="font-september text-muted-foreground md:text-2xl text-xl">🤍, Silja & Harri</p>
+      </footer>
     </div>;
 };
 export default SaveTheDate;
