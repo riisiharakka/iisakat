@@ -68,7 +68,7 @@ const SaveTheDate: React.FC = () => {
           duration: 1,
           delay: 1.9
         }} className="font-september text-2xl text-zinc-600 md:text-4xl">
-              {daysLeft} päivää jäljellä
+              Päiviä hääjuhlaan: {daysLeft}
             </motion.p>}
           <motion.p initial={{
           opacity: 0
