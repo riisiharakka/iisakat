@@ -51,9 +51,12 @@
   body {
     @apply bg-background text-foreground font-serif;
     overflow-x: hidden;
-    background-image: url('/images/paper-texture.png');
-    background-size: 1024px 1024px;
-    background-repeat: repeat;
+    background-image:
+      radial-gradient(120% 100% at 50% 40%, hsl(var(--background)) 55%, hsl(var(--foreground) / 0.06) 100%),
+      url('/images/paper-texture-1024.png');
+    background-size: 100% 100%, 1024px 1024px;
+    background-repeat: no-repeat, repeat;
+    background-blend-mode: multiply, normal;
   }
 
   /* Custom styles for elegant dividers */
