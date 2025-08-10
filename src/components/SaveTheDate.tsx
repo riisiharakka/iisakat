@@ -48,7 +48,7 @@ const SaveTheDate: React.FC = () => {
         delay: 1.5
       }} className="space-y-2">
           <div className="inline-block p-4 md:p-6 rounded-md backdrop-blur-sm bg-background/70">
-            <p className="font-cursive text-muted-foreground md:text-base text-xl">
+            <p className="font-cursive text-muted-foreground text-xl md:text-xl">
               14.2.2026
             </p>
           </div>
@@ -59,7 +59,7 @@ const SaveTheDate: React.FC = () => {
         }} transition={{
           duration: 1,
           delay: 2.2
-        }} className="font-cursive md:text-base text-2xl text-zinc-600">Virallinen kutsu saapuu myöhemmin</motion.p>
+        }} className="font-cursive text-2xl text-zinc-600 md:text-2xl">Virallinen kutsu saapuu myöhemmin</motion.p>
         </motion.div>
 
         <motion.div initial={{
