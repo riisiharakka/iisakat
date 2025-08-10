@@ -20,7 +20,7 @@ const SaveTheDate: React.FC = () => {
     const days = differenceInCalendarDays(startOfDay(target), startOfDay(now));
     setDaysLeft(days);
   }, []);
-  return <div ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden">
+  return <div ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden font-september">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-32 h-32 md:w-48 md:h-48 opacity-30">
           <FlowerOrnament className="w-full h-full" />
@@ -57,7 +57,7 @@ const SaveTheDate: React.FC = () => {
         delay: 1.5
       }} className="space-y-2">
           <div className="inline-block p-4 md:p-6 rounded-md backdrop-blur-sm bg-background/70">
-            <p className="font-cursive text-muted-foreground text-xl md:text-xl">
+            <p className="font-september text-muted-foreground text-xl md:text-xl">
               14.2.2026
             </p>
           </div>
@@ -66,7 +66,7 @@ const SaveTheDate: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.9 }}
-              className="font-cursive text-2xl text-zinc-600 md:text-2xl"
+              className="font-september text-2xl text-zinc-600 md:text-2xl"
             >
               {daysLeft} päivää jäljellä
             </motion.p>
@@ -78,7 +78,7 @@ const SaveTheDate: React.FC = () => {
         }} transition={{
           duration: 1,
           delay: 2.2
-        }} className="font-cursive text-2xl text-zinc-600 md:text-2xl">Virallinen kutsu saapuu myöhemmin</motion.p>
+        }} className="font-september text-2xl text-zinc-600 md:text-2xl">Virallinen kutsu saapuu myöhemmin</motion.p>
         </motion.div>
 
         <motion.div initial={{
