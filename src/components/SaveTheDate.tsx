@@ -47,11 +47,9 @@ const SaveTheDate: React.FC = () => {
         duration: 1,
         delay: 1.5
       }} className="space-y-2">
-          <div className="inline-block p-4 md:p-6 rounded-md backdrop-blur-sm">
-            <p className="font-september text-muted-foreground text-xl md:text-5xl">
-              14.2.2026
-            </p>
-          </div>
+          <p className="font-september text-muted-foreground text-xl md:text-5xl">
+            14.2.2026
+          </p>
           {daysLeft !== null && <motion.p initial={{
           opacity: 0
         }} animate={{
