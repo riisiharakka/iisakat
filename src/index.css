@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 30 33% 99%;
+    --background: 42 30% 94%;
     --foreground: 20 10% 15%;
 
     --card: 0 0% 100%;
@@ -51,8 +51,11 @@
   body {
     @apply bg-background text-foreground font-serif;
     overflow-x: hidden;
+    background-image: url('/images/paper-texture.png');
+    background-size: 1024px 1024px;
+    background-repeat: repeat;
   }
-  
+
   /* Custom styles for elegant dividers */
   .divider-ornament {
     position: relative;
