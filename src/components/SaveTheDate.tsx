@@ -40,8 +40,8 @@ const SaveTheDate: React.FC = () => {
         delay: 0.2
       }} className="space-y-2">
           <h1 className={cn("text-5xl md:text-7xl font-cursive", "tracking-wide text-primary")}>Silja ja Harri</h1>
-          <p className="text-sm md:text-base uppercase tracking-widest text-muted-foreground">
-            Save the Date
+          <p className="font-cursive text-xl md:text-2xl text-muted-foreground">
+            Save the date
           </p>
         </motion.div>
 
@@ -66,7 +66,7 @@ const SaveTheDate: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.9 }}
-              className="font-cursive text-2xl text-zinc-600 md:text-2xl"
+              className="font-cursive text-2xl text-muted-foreground md:text-2xl"
             >
               {daysLeft} päivää jäljellä
             </motion.p>
@@ -78,7 +78,7 @@ const SaveTheDate: React.FC = () => {
         }} transition={{
           duration: 1,
           delay: 2.2
-        }} className="font-cursive text-2xl text-zinc-600 md:text-2xl">Virallinen kutsu saapuu myöhemmin</motion.p>
+        }} className="font-cursive text-2xl text-muted-foreground md:text-2xl">Virallinen kutsu lisätietoineen saapuu myöhemmin</motion.p>
         </motion.div>
 
         <motion.div initial={{
@@ -103,10 +103,18 @@ const SaveTheDate: React.FC = () => {
       }} transition={{
         duration: 1.2,
         delay: 1.3
-      }} className="w-full max-w-md mx-auto">
-          <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img src="/lovable-uploads/ea9e63b3-1152-475e-ae18-f2dc0946dc20.png" alt="Couple" className="w-full h-auto rounded-lg" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+      }} className="w-full max-w-2xl mx-auto space-y-4">
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.1 }} className="font-cursive text-xl md:text-2xl text-muted-foreground">
+            sanovat tahdon
+            <br className="hidden md:block" />
+            Helsingissä
+          </motion.p>
+          <div className="relative rounded-none border-2 border-ornament/80 p-8 md:p-10 bg-background/70">
+            <span className="pointer-events-none absolute -top-1 -left-1 h-3 w-3 border-t-2 border-l-2 border-ornament/80"></span>
+            <span className="pointer-events-none absolute -top-1 -right-1 h-3 w-3 border-t-2 border-r-2 border-ornament/80"></span>
+            <span className="pointer-events-none absolute -bottom-1 -left-1 h-3 w-3 border-b-2 border-l-2 border-ornament/80"></span>
+            <span className="pointer-events-none absolute -bottom-1 -right-1 h-3 w-3 border-b-2 border-r-2 border-ornament/80"></span>
+            <div className="h-28 md:h-36 bg-transparent"></div>
           </div>
         </motion.div>
       </div>
