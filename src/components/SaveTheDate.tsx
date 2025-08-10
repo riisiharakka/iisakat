@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { differenceInCalendarDays, startOfDay } from 'date-fns';
 import { cn } from '@/lib/utils';
-import FlowerOrnament from './FlowerOrnament';
+
 const SaveTheDate: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [daysLeft, setDaysLeft] = useState<number | null>(null);
@@ -20,14 +20,6 @@ const SaveTheDate: React.FC = () => {
     setDaysLeft(days);
   }, []);
   return <div ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden font-september">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-32 h-32 md:w-48 md:h-48 opacity-30">
-          <FlowerOrnament className="w-full h-full" />
-        </div>
-        <div className="absolute bottom-0 right-0 w-32 h-32 md:w-48 md:h-48 opacity-30 rotate-180">
-          <FlowerOrnament className="w-full h-full" />
-        </div>
-      </div>
 
       <div className="w-full max-w-3xl mx-auto text-center space-y-6 md:space-y-10">
         <motion.div initial={{
