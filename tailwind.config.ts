@@ -23,6 +23,7 @@ export default {
 				serif: ['Cormorant Garamond', 'serif'],
 				sans: ['Inter', 'sans-serif'],
 				cursive: ['Dancing Script', 'cursive'],
+				september: ['"September Spirit"', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
