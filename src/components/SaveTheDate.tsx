@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { differenceInCalendarDays, startOfDay } from 'date-fns';
 import { cn } from '@/lib/utils';
-
 const SaveTheDate: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [daysLeft, setDaysLeft] = useState<number | null>(null);
@@ -47,7 +46,7 @@ const SaveTheDate: React.FC = () => {
         duration: 1,
         delay: 1.5
       }} className="space-y-2">
-          <p className="font-september text-muted-foreground text-xl md:text-5xl">
+          <p className="font-september text-muted-foreground text-xl md:text-7xl">
             14.2.2026
           </p>
           {daysLeft !== null && <motion.p initial={{
