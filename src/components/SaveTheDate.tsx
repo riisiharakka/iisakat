@@ -6,13 +6,6 @@ const SaveTheDate: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [daysLeft, setDaysLeft] = useState<number | null>(null);
   useEffect(() => {
-    // Disable page scrolling on mobile
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-  useEffect(() => {
     const now = new Date();
     const target = new Date(2026, 1, 14);
     const days = differenceInCalendarDays(startOfDay(target), startOfDay(now));
