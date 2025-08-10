@@ -93,8 +93,8 @@ const SaveTheDate: React.FC = () => {
         delay: 1.3
       }} className="w-full max-w-md mx-auto">
           <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img src="/lovable-uploads/def916bb-9748-4bb6-bbf7-62148c0a4852.png" alt="Wedding invitation photo of a couple at sunset on a rooftop" className="w-full h-auto rounded-lg" />
-            <img src="/lovable-uploads/425634bf-3bca-4ad8-b247-29da3df5fb6a.png" alt="Silja and Harri rooftop portrait - Save the Date photo" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+            
+            <img src="/lovable-uploads/6ef990f2-065c-4d1b-bb6a-928949211c4e.png" alt="Silja and Harri rooftop portrait - Save the Date photo" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
           </div>
         </motion.div>
       </div>
