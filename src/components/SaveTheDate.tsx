@@ -66,7 +66,7 @@ const SaveTheDate: React.FC = () => {
         }} transition={{
           duration: 1,
           delay: 2.2
-        }} className="font-september text-2xl text-zinc-600 md:text-4xl">Virallinen kutsu saapuu myöhemmin</motion.p>
+        }} className="font-september text-zinc-600 md:text-4xl text-2xl">Virallinen kutsu saapuu myöhemmin</motion.p>
         </motion.div>
 
         <motion.div initial={{
